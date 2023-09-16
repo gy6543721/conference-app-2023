@@ -256,7 +256,7 @@ fun PreviewTimetableScreenDark() {
     CompositionLocalProvider(
         LocalClockProvider provides object : Clock {
             override fun now(): Instant = Instant.parse("2023-09-14T00:00:00Z")
-        }
+        },
     ) {
         KaigiTheme {
             TimetableScreen(
